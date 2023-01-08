@@ -3,6 +3,7 @@
 ```json
 ONLY USE THIS ON SINGLE SERVER / PRIVAVE BOT.
 ```
+### [Preview](https://github.com/GreenVGJR/modmail-aoijs/tree/preview)
 ___
 #### Require Permissions for Bot & Moderator / Whitelist Role
 - View Channel / Read Message
@@ -90,7 +91,6 @@ Variables
    //{sid}, {cid}, {return}, {date}
    mailrecorddatapath: "./database/mail-recorddata.txt" //location file its save/update
 ```
-### [Preview](https://github.com/GreenVGJR/modmail-aoijs/tree/preview)
 ### Features
 ```
 - Transcript
