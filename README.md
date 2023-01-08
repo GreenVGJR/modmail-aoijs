@@ -90,7 +90,7 @@ Variables
    //{sid}, {cid}, {return}, {date}
    mailrecorddatapath: "./database/mail-recorddata.txt" //location file its save/update
 ```
-### [Preview](https://google.com)
+### [Preview](https://github.com/GreenVGJR/modmail-aoijs/tree/preview)
 ### Features
 ```
 - Transcript
