@@ -1,6 +1,44 @@
 ### Remake from Basement Moderators.
 ### No Client Include.
+```json
+ONLY USE THIS ON SINGLE SERVER / PRIVAVE BOT.
+```
 ___
+#### Require Permissions for Bot
+- View Channel / Read Message
+- Send Message
+- Manage Channels
+- Manage Messages
+- Attach Files
+- Embed Links
+- Read Message History
+- External Emojis
+
+#### Require Permissions for Modmail Category
+(yes, i don't make a auto-setup thing, bcus aoi.js don't like it)
+
+- View Channel / Read Message
+- Send Message
+- Manage Channels
+- Manage Messages
+- Attach Files
+- Embed Links
+- Read Message History
+- External Emojis
+- Mentions @veryone, @here, and All Roles `(optional)`
+___
+Commands
+```
+- modmail-setup //Create Modmail
+- modmail-options //Options Modmail
+- modmail-reset //Reset Modmail
+
+- modmail-transcript //Transcript Logs
+
+- modmail-answer //Answer the Modmail (if "allow send message" feature disabled)
+- modmail-close //Close the Modmail
+```
+
 Callbacks
 ```js
 bot.onMessage({
@@ -63,6 +101,6 @@ Variables
 - Keep Modmail Channel (from modmail-close)
 - Recover Modmail (if some modmail data was deleted/corrupted)
 
-- Edit Welcome Message, support Embed feature
+- Edit Welcome Message, support Embed
 - Whitelist Roles (for modmail-answer, modmail-close, and "ping roles" feature)
 ```
