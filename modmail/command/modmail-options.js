@@ -1,0 +1,26 @@
+module.exports = {
+   name: "modmail-options",
+   code: `$author[1;Modmail]
+   $addField[1;Type Create;\`$getServerVar[mailtypecreate]\`;yes]
+   $addField[1;Transcript;\`$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatustranscript]==0];true;❌];false;✅]\`;yes]
+   $addField[1;Status;\`$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatus]==0];true;❌];false;✅]\`;yes]
+   $addField[1;Category;\`$replaceText[$replaceText[$checkCondition[$getServerVar[mailmaincategoryid]==];true;none];false;#$channelName[$replaceText[$replaceText[$checkCondition[$getServerVar[mailmaincategoryid]==];true;$channelID];false;$getServerVar[mailmaincategoryid]]]]\`;no]
+   $addField[2;Keep Modmail Channel;\`$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatusdelete]==0];true;❌];false;✅]\`;yes]
+   $addField[2;Ping Roles;\`$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatusroles]==0];true;❌];false;✅]\`;yes]
+   $addField[2;Allow Send Message;\`$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatussend]==0];true;❌];false;✅]\`;yes]
+   $addField[2;DM Open;\`$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatusdm]==0];true;❌];false;✅]\`;yes]
+   $addField[2;Record Data;\`$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatusrecorddata]==0];true;❌];false;✅]\`;yes]
+   $color[2;$getVar[mailcolorembed]]
+   $addTimestamp[2]
+   $color[1;$getVar[mailcolorembed]]
+   $addSelectMenu[4;modmailmenu;Type Create;1;1;no;UserID:#$cropText[$authorID;18]:modmailmenu_userid_$authorID;Timestamp:#$cropText[$dateStamp;18]:modmailmenu_timestamp_$authorID;Name:#$cropText[$username[$authorID];18]:modmailmenu_name_$authorID;Discriminator:#$discriminator[$authorID]:modmailmenu_discriminator_$authorID;Custom:type1-type2:modmailmenu_custom_$authorID]
+   $addButton[3;Keep Modmail Channel;$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatusdelete]==0];true;2];false;3];mailkeepchannel_$authorID;no]
+   $addButton[3;Ping Roles;$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatusroles]==0];true;2];false;3];mailpingroles_$authorID;no]
+   $addButton[2;Allow Send Message;$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatussend]==0];true;2];false;3];mailsendmessage_$authorID;no]
+   $addButton[2;DM Open;$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatusdm]==0];true;2];false;3];maildmopen_$authorID;no]
+   $addButton[2;Record Data;$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatusrecorddata]==0];true;2];false;3];mailrecord_$authorID;no]
+   $addButton[1;More;1;mailadvanceoptions_$authorID;no;🔼]
+   $addButton[1;Disable;4;maildisable_$authorID;no;✖]
+   $addButton[1;Transcript;$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatustranscript]==0];true;2];false;3];mailtranscript_$authorID;no]
+   $addButton[1;Status;$replaceText[$replaceText[$checkCondition[$getServerVar[mailstatus]==0];true;2];false;3];mailstatus_$authorID;no]`
+}
