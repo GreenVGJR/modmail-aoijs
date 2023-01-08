@@ -6,5 +6,5 @@
 <img src="https://cdn.discordapp.com/attachments/1055832957916557332/1061660103536807976/image.png"/>
 <img src="https://cdn.discordapp.com/attachments/1055832957916557332/1061660103893336084/image.png"/>
 <img src="https://cdn.discordapp.com/attachments/1055832957916557332/1061663098366341131/image.png"/>
-if transcript feature was on
+if transcript feature active
 <img src="https://cdn.discordapp.com/attachments/1055832957916557332/1061660104245661746/image.png"/>
