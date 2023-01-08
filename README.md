@@ -4,7 +4,7 @@
 ONLY USE THIS ON SINGLE SERVER / PRIVAVE BOT.
 ```
 ___
-#### Require Permissions for Bot
+#### Require Permissions for Bot & Moderator / Whitelist Role
 - View Channel / Read Message
 - Send Message
 - Manage Channels
