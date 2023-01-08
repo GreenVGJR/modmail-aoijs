@@ -25,7 +25,7 @@ ___
 - Embed Links
 - Read Message History
 - External Emojis
-- Mentions @veryone, @here, and All Roles `(optional)`
+- Mentions @everyone, @here, and All Roles `(optional)`
 ___
 Commands
 ```
@@ -91,7 +91,7 @@ Variables
    mailrecorddatapath: "./database/mail-recorddata.txt" //location file its save/update
 ```
 ### [Preview](https://google.com)
-# Features
+### Features
 ```
 - Transcript
 - Record Data
@@ -104,3 +104,4 @@ Variables
 - Edit Welcome Message, support Embed
 - Whitelist Roles (for modmail-answer, modmail-close, and "ping roles" feature)
 ```
+Thanks for Aggelos btw
