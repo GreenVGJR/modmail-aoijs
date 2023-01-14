@@ -28,6 +28,12 @@ ___
 - External Emojis
 - Mentions @everyone, @here, and All Roles `(optional)`
 ___
+Intents
+```
+intents: ["GUILDS", "GUILD_MESSAGES", "DIRECT_MESSAGES"]
+// or » intents: "all"
+```
+
 Commands
 ```
 - modmail-setup //Create Modmail
