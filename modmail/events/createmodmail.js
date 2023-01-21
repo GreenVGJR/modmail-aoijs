@@ -170,7 +170,8 @@ $replaceText[$replaceText[$getServerVar[mailstatussend;$getGlobalUserVar[mailmai
    $endif
    $onlyIf[$getServerVar[mailstatus;$getGlobalUserVar[mailmainserverid;$clientID]]!=0;]
    $onlyIf[$getServerVar[mailmessage;$getGlobalUserVar[mailmainserverid;$clientID]]!=;]
-   $onlyIf[$getGlobalUserVar[mailmainserverid;$clientID]!=;]`
+   $onlyIf[$getGlobalUserVar[mailmainserverid;$clientID]!=;]
+   $suppressErrors`
 },
 {
    name: "autoremovedatamodmailuser",
